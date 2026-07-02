@@ -1,70 +1,155 @@
-# Getting Started with Create React App
+# FinGuard AI – Intelligent Fraud Detection & Banking Assistant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+FinGuard AI is an AI-powered banking application that detects fraudulent transactions using Machine Learning and answers banking-related questions using Retrieval-Augmented Generation (RAG).
 
-In the project directory, you can run:
+The system combines:
 
-### `npm start`
+- Machine Learning for fraud prediction
+- FastAPI backend
+- React frontend
+- MySQL database
+- RAG chatbot using banking PDF documents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Fraud Detection
+- Banking Chatbot
+- Transaction History
+- Dashboard
+- Charts and Analytics
+- MySQL Integration
+- REST API
+- Banking Knowledge Base using PDF
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Frontend
+- React.js
+- Bootstrap
+- Axios
+- Chart.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend
+- FastAPI
+- Python
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Database
+- MySQL
 
-### `npm run eject`
+### Machine Learning
+- Scikit-learn
+- Pandas
+- NumPy
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### AI
+- LangChain
+- FAISS
+- Sentence Transformers
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```text
+FinGuard-AI/
+│
+├── backend/
+├── frontend/
+├── database/
+├── datasets/
+├── documents/
+├── models/
+├── rag/
+├── README.md
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Clone Repository
 
-### Code Splitting
+```bash
+git clone https://github.com/vtu27960-sanjay/FinGuard-AI.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+### Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn app:app --reload
+```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Frontend
 
-### Advanced Configuration
+```bash
+cd frontend
+npm install
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+### Database
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Import:
 
-### `npm run build` fails to minify
+```
+database/schema.sql
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+into MySQL.
+
+---
+
+## API Endpoints
+
+### Predict Fraud
+
+```
+POST /predict
+```
+
+### Chatbot
+
+```
+POST /chat
+```
+
+---
+
+## Future Improvements
+
+- User Authentication
+- Live Banking APIs
+- Email Alerts
+- SMS Notifications
+- Cloud Deployment
+- Admin Dashboard
+
+---
+
+## Author
+
+**Sanjay Thuraka**
+
+B.Tech CSE (AI & ML)
+
+Vel Tech University
+
+---
+
+## License
+
+This project is developed for educational purposes.
