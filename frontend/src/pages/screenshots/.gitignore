@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environments
+venv/
+env/
+
+# Node Modules
+node_modules/
+
+# React Build
+build/
+
+# Environment Variables
+.env
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+
+# macOS
+.DS_Store
+
+# Python cache
+.pytest_cache/
+
+# Vector database (optional)
+rag/vectorstore/

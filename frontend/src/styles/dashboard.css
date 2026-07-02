@@ -1,0 +1,22 @@
+body {
+    background-color: #f5f7fa;
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+}
+
+.table {
+    background: white;
+}
+
+.btn {
+    border-radius: 8px;
+
+}
